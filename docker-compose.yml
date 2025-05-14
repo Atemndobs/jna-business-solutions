@@ -2,13 +2,11 @@ version: '3.8'
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: atemndobs/jna-amd64:v0.1
     container_name: jna-business-solutions
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8642:80"
     environment:
       - NODE_ENV=production
     healthcheck:
@@ -17,11 +15,11 @@ services:
       timeout: 10s
       retries: 3
       start_period: 5s
+    volumes:
+      - ./public:/app/public
+      - ./.env:/app/.env
     networks:
       - jna-network
-    volumes:
-      - ./logs/nginx:/var/log/nginx
-      - ./data/nginx:/var/cache/nginx
 
 networks:
   jna-network:
