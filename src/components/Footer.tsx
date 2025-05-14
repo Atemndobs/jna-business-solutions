@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from './ui/Link';
+import { ScrollContext } from '../ScrollContext';
 
 const Footer: React.FC = () => {
+  const { isScrolled } = useContext(ScrollContext);
+
   return (
     <footer className="bg-navy-950 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -13,6 +16,7 @@ const Footer: React.FC = () => {
                 alt="J & A Business Solutions LLC"
                 className="h-12 w-auto mr-3"
               />
+              <span className={`font-medium ${isScrolled ? 'text-black-800' : 'text-white'}`}>Business Solutions LLC</span>
             </div>
             <p className="text-white/70 mb-6">
               Providing exceptional short-term rental experiences with unmatched comfort and convenience.
