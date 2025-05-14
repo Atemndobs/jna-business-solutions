@@ -6,7 +6,7 @@ services:
     container_name: jna-business-solutions
     restart: unless-stopped
     ports:
-      - "8642:80"
+      - "8642:3000"
     environment:
       - NODE_ENV=production
     healthcheck:
