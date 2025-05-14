@@ -17,6 +17,8 @@ COPY . .
 
 RUN ls -l
 
+RUN npm run build
+
 EXPOSE 80
 EXPOSE 3000
 # Install serve
