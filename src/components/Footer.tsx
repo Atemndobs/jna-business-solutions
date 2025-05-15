@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
               <span className={`font-medium ${isScrolled ? 'text-black-800' : 'text-white'}`}>Business Solutions LLC</span>
             </div>
             <p className="text-white/70 mb-6">
-              Providing exceptional short-term rental experiences with unmatched comfort and convenience.
+              Providing exceptional corporate rental experiences with unmatched comfort and convenience.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/70 hover:text-gold-500 transition-colors">

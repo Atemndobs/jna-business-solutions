@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
           <span className="text-sm font-medium text-gold-500 uppercase tracking-wider">Contact Us</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Book Your Stay</h2>
           <p className="mt-4 text-white/80 text-lg">
-            Ready to experience luxury short-term rentals? Contact us to book your stay or learn more about our properties.
+            Ready to experience modern corperate rentals? Contact us to book your stay or learn more about our properties.
           </p>
         </div>
         
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
               
-              <div className="mt-10">
+              {/* <div className="mt-10">
                 <h4 className="font-medium mb-3">Follow Us</h4>
                 <div className="flex space-x-4">
                   <a href="#" className="bg-navy-700 hover:bg-gold-500 p-3 rounded-full transition-colors">
@@ -141,11 +141,11 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           
-          <div>
+          {/* <div>
             {isSubmitted ? (
               <div className="bg-green-600/20 text-green-100 p-8 rounded-lg text-center">
                 <svg className="w-16 h-16 mx-auto mb-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -226,7 +226,7 @@ const Contact: React.FC = () => {
                 </button>
               </form>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

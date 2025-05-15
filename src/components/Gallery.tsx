@@ -6,27 +6,27 @@ const Gallery: React.FC = () => {
   const images = [
     { 
       src: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750", 
-      alt: "Luxury Living Room" 
+      alt: "Tucson, Arizona" 
     },
     { 
       src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750", 
-      alt: "Modern Kitchen" 
+      alt: "Austin, Texas" 
     },
     { 
       src: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750", 
-      alt: "Elegant Bedroom" 
+      alt: "Phoenix, Arizona" 
     },
     { 
       src: "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750", 
-      alt: "Luxurious Bathroom" 
+      alt: "Dallas, Texas" 
     },
     { 
       src: "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750", 
-      alt: "Outdoor Pool Area" 
+      alt: "Scottsdale, Arizona" 
     },
     { 
       src: "https://images.pexels.com/photos/3935350/pexels-photo-3935350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750", 
-      alt: "Home Office" 
+      alt: "Houston, Texas" 
     },
   ];
 

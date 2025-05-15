@@ -17,10 +17,10 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
-            Luxury Short-Term Rentals for <span className="text-gold-500">Modern Living</span>
+            Corporate Rentals for <span className="text-gold-500">Modern Living</span>
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-2xl">
-            Experience premium short-term accommodations tailored to your lifestyle. J & A Business Solutions LLC provides exceptional rental properties with unmatched comfort and convenience.
+            Experience premium corporate accommodations tailored to your lifestyle. J & A Business Solutions LLC provides exceptional rental properties with unmatched comfort and convenience.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link 

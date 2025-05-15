@@ -32,9 +32,9 @@ const Header: React.FC = () => {
             alt="J & A Business Solutions LLC" 
             className="h-12 w-auto mr-3"
           />
-          <span className={`font-medium ${isScrolled ? 'text-navy-800' : 'text-white'}`}>
+          {/* <span className={`font-medium ${isScrolled ? 'text-navy-800' : 'text-white'}`}>
             Business Solutions LLC
-          </span>
+          </span> */}
         </div>
 
         {/* Desktop Navigation */}
