@@ -26,15 +26,15 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <img 
             src={isScrolled 
-              ? "https://minio.goose-neon.ts.net/curator/assets/ja_icon_black.jpeg"
-              : "https://minio.goose-neon.ts.net/curator/assets/ja_icon_white.jpeg"
+              ? "https://minio.goose-neon.ts.net/curator/assets/Profile_Round_grey.png"
+              : "https://minio.goose-neon.ts.net/curator/assets/Profile_Round_grey.png"
             } 
             alt="J & A Business Solutions LLC" 
             className="h-12 w-auto mr-3"
           />
-          <span className={`font-medium ${isScrolled ? 'text-navy-800' : 'text-white'}`}>
+          {/* <span className={`font-medium ${isScrolled ? 'text-navy-800' : 'text-white'}`}>
             Business Solutions LLC
-          </span>
+          </span> */}
         </div>
 
         {/* Desktop Navigation */}
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             className="ml-4 flex items-center bg-gold-500 text-white px-4 py-2 rounded hover:bg-gold-600 transition-colors"
           >
             <Phone size={16} className="mr-2" />
-            <span>(123) 456-7890</span>
+            <span>+1 (520) 869-9777</span>
           </a>
         </nav>
 
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
                 className="flex items-center bg-gold-500 text-white px-4 py-2 rounded hover:bg-gold-600 transition-colors w-full justify-center"
               >
                 <Phone size={16} className="mr-2" />
-                <span>(123) 456-7890</span>
+                <span>+1 (520) 869-9777</span>
               </a>
             </nav>
           </div>

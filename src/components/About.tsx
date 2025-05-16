@@ -22,10 +22,10 @@ const About: React.FC = () => {
                 alt="Luxury Rental Property" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
-              <div className="absolute -bottom-8 -right-8 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+              {/* <div className="absolute -bottom-8 -right-8 bg-white p-4 rounded-lg shadow-lg hidden md:block">
                 <div className="text-navy-900 font-serif font-bold text-4xl mb-1">100+</div>
                 <div className="text-navy-600 text-sm">Happy Guests</div>
-              </div>
+              </div> */}
             </div>
           </div>
           
@@ -88,12 +88,12 @@ const About: React.FC = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gold-100">
               <img 
-                src="https://minio.goose-neon.ts.net/curator/assets/jule_in.jpeg" 
-                alt="Jule"
+                src="https://minio.goose-neon.ts.net/curator/assets/jule_profile.JPG" 
+                alt="Juliane Schlegel"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-bold text-navy-900">Jule</h3>
+            <h3 className="text-xl font-bold text-navy-900">Juliane Schlegel</h3>
             <p className="text-gold-500 mb-4">Co-Founder</p>
             <p className="text-navy-700">With a passion for hospitality and attention to detail, Jule ensures every property meets our high standards of excellence.</p>
           </div>
@@ -103,11 +103,11 @@ const About: React.FC = () => {
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gold-100">
               <img 
                 src="https://minio.goose-neon.ts.net/curator/assets/atem_in.jpeg" 
-                alt="Atem"
+                alt="Bertrand Atemkeng"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-bold text-navy-900">Atem</h3>
+            <h3 className="text-xl font-bold text-navy-900">Bertrand Atemkeng</h3>
             <p className="text-gold-500 mb-4">Co-Founder</p>
             <p className="text-navy-700">Atem brings innovative solutions and strategic vision to create exceptional guest experiences across all our properties.</p>
           </div>
@@ -117,11 +117,11 @@ const About: React.FC = () => {
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gold-100">
               <img 
                 src="https://minio.goose-neon.ts.net/curator/assets/randals_in.jpeg" 
-                alt="Randals"
+                alt="Randalls Chabeja"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-bold text-navy-900">Randals</h3>
+            <h3 className="text-xl font-bold text-navy-900">Randalls Chabeja</h3>
             <p className="text-gold-500 mb-4">Co-Founder</p>
             <p className="text-navy-700">Randals combines business acumen with a commitment to quality, driving our mission to redefine short-term rentals.</p>
           </div>
