@@ -22,10 +22,10 @@ const About: React.FC = () => {
                 alt="Luxury Rental Property" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
-              <div className="absolute -bottom-8 -right-8 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+              {/* <div className="absolute -bottom-8 -right-8 bg-white p-4 rounded-lg shadow-lg hidden md:block">
                 <div className="text-navy-900 font-serif font-bold text-4xl mb-1">100+</div>
                 <div className="text-navy-600 text-sm">Happy Guests</div>
-              </div>
+              </div> */}
             </div>
           </div>
           
@@ -88,7 +88,7 @@ const About: React.FC = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gold-100">
               <img 
-                src="https://minio.goose-neon.ts.net/curator/assets/jule_in.jpeg" 
+                src="https://minio.goose-neon.ts.net/curator/assets/jule_profile.JPG" 
                 alt="Juliane Schlegel"
                 className="w-full h-full object-cover"
               />
