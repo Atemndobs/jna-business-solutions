@@ -38,7 +38,7 @@ const Services: React.FC = () => {
     },
     {
       title: "Concierge Services",
-      description: "Comprehensive support including property tours, local recommendations, and 24/7 maintenance assistance.",
+      description: "Tailored support for the modern professional — including streamlined check-ins and 24/7 on-call assistance to ensure a seamless, stress-free stay.",
       icon: <Tool size={24} />
     }
   ];

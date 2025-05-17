@@ -1,77 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
-interface FormState {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-}
-
-interface FormErrors {
-  name?: string;
-  email?: string;
-  phone?: string;
-  message?: string;
-}
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState<FormState>({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const [errors, setErrors] = useState<FormErrors>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const validate = (): boolean => {
-    const newErrors: FormErrors = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (validate()) {
-      setIsSubmitting(true);
-
-      // Simulate form submission
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: ''
-        });
-      }, 1500);
-    }
-  };
 
   return (
     <section id="contact" className="py-20 bg-navy-900 text-white">
@@ -79,21 +10,24 @@ const Contact: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-sm font-medium text-gold-500 uppercase tracking-wider">Contact</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Talk to Us</h2>
-          {/* <p className="mt-4 text-white/80 text-lg">
-            Whether you’re a property owner exploring a strategic partnership or a guest seeking premium corporate housing — we’re here to help.
-          </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Property Owners</h2>
-          <p className="mt-4 text-white/80 text-lg">
-            Interested in guaranteed rental income and hands-off property management? Let’s discuss how our corporate leasing model protects and elevates your asset.
-          </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Corporate Guests</h2>
-          <p className="mt-4 text-white/80 text-lg">
-            Looking for a professional, fully serviced stay? Reach out to learn more about our curated portfolio of modern accommodations.
-          </p> */}
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
+            <p className="mt-4 text-white/80 text-lg">
+              Whether you’re a property owner exploring a strategic partnership or a guest seeking premium corporate housing — we’re here to help.
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Property Owners</h2>
+            <p className="mt-4 text-white/80 text-lg">
+              Interested in guaranteed rental income and hands-off property management? Let’s discuss how our corporate leasing model protects and elevates your asset.
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Corporate Guests</h2>
+            <p className="mt-4 text-white/80 text-lg">
+              Looking for a professional, fully serviced stay? Reach out to learn more about our curated portfolio of modern accommodations.
+            </p>
+          </div>
+
+                    <div>
             <div className="bg-navy-800 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
 
@@ -154,89 +88,6 @@ const Contact: React.FC = () => {
               </div> */}
             </div>
           </div>
-
-          {/* <div>
-            {isSubmitted ? (
-              <div className="bg-green-600/20 text-green-100 p-8 rounded-lg text-center">
-                <svg className="w-16 h-16 mx-auto mb-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
-                <p className="text-lg mb-4">Your booking inquiry has been sent successfully.</p>
-                <p>We'll get back to you within 24 hours to confirm your stay.</p>
-                <button 
-                  onClick={() => setIsSubmitted(false)}
-                  className="mt-6 bg-white text-navy-900 px-6 py-2 rounded-md font-medium hover:bg-gold-500 hover:text-white transition-colors"
-                >
-                  Make Another Inquiry
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="bg-navy-800 p-8 rounded-lg">
-                <div className="grid md:grid-cols-2 gap-5">
-                  <div className="col-span-2 md:col-span-1">
-                    <label htmlFor="name" className="block text-sm font-medium text-gold-500 mb-1">Full Name*</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className={`w-full bg-navy-700 border ${errors.name ? 'border-red-500' : 'border-navy-600'} rounded-md px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold-500`}
-                      value={formData.name}
-                      onChange={handleChange}
-                    />
-                    {errors.name && <p className="mt-1 text-red-500 text-sm">{errors.name}</p>}
-                  </div>
-                  
-                  <div className="col-span-2 md:col-span-1">
-                    <label htmlFor="email" className="block text-sm font-medium text-gold-500 mb-1">Email Address*</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className={`w-full bg-navy-700 border ${errors.email ? 'border-red-500' : 'border-navy-600'} rounded-md px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold-500`}
-                      value={formData.email}
-                      onChange={handleChange}
-                    />
-                    {errors.email && <p className="mt-1 text-red-500 text-sm">{errors.email}</p>}
-                  </div>
-                  
-                  <div className="col-span-2">
-                    <label htmlFor="phone" className="block text-sm font-medium text-gold-500 mb-1">Phone Number</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      className="w-full bg-navy-700 border border-navy-600 rounded-md px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold-500"
-                      value={formData.phone}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  
-                  <div className="col-span-2">
-                    <label htmlFor="message" className="block text-sm font-medium text-gold-500 mb-1">Message*</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      className={`w-full bg-navy-700 border ${errors.message ? 'border-red-500' : 'border-navy-600'} rounded-md px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold-500`}
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell us about your desired dates and any specific requirements..."
-                    />
-                    {errors.message && <p className="mt-1 text-red-500 text-sm">{errors.message}</p>}
-                  </div>
-                </div>
-                
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className={`mt-6 w-full bg-gold-500 text-white py-3 px-6 rounded-md font-medium hover:bg-gold-600 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Booking Inquiry'}
-                </button>
-              </form>
-            )}
-          </div> */}
         </div>
       </div>
     </section>

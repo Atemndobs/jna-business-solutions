@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: atemndobs/jna-amd64:v0.8 
+    image: atemndobs/jna-amd64:v0.9 
     container_name: jna-business-solutions
     restart: unless-stopped
     ports:

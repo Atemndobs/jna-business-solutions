@@ -95,7 +95,7 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-navy-900">Juliane Schlegel</h3>
             <p className="text-gold-500 mb-4">Co-Founder</p>
-            <p className="text-navy-700">With a passion for hospitality and attention to detail, Jule ensures every property meets our high standards of excellence.</p>
+            <p className="text-navy-700">With a passion for hospitality and attention to detail, Juliane ensures every property meets our high standards of excellence.</p>
           </div>
           
           {/* Founder 2 */}
@@ -109,7 +109,7 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-navy-900">Bertrand Atemkeng</h3>
             <p className="text-gold-500 mb-4">Co-Founder</p>
-            <p className="text-navy-700">Atem brings innovative solutions and strategic vision to create exceptional guest experiences across all our properties.</p>
+            <p className="text-navy-700">Bertrand brings innovative solutions and strategic vision to create exceptional guest experiences across all our properties.</p>
           </div>
           
           {/* Founder 3 */}
@@ -123,7 +123,7 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-navy-900">Randalls Chabeja</h3>
             <p className="text-gold-500 mb-4">Co-Founder</p>
-            <p className="text-navy-700">Randals combines business acumen with a commitment to quality, driving our mission to redefine short-term rentals.</p>
+            <p className="text-navy-700">Randalls combines business acumen with a commitment to quality, driving our mission to redefine short-term rentals.</p>
           </div>
         </div>
       </div>

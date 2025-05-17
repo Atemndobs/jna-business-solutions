@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Users, DollarSign, Wrench, Shield, Clock, MessageSquare, Leaf } from 'lucide-react';
+import { Users, DollarSign, Wrench, Shield, Clock, MessageSquare, Leaf } from 'lucide-react';
 
 interface BenefitProps {
   title: string;
@@ -77,11 +77,15 @@ const PropertyOwners: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <div className="relative">
+
               <img
-                src="https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                src="https://minio.goose-neon.ts.net/curator/assets/romain-dancre-doplSDELX7E-unsplash.jpg"
                 alt="Luxury Property Management"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
+              <div className="text-gray-500 text-sm mt-2">
+                Photo by <a href="https://unsplash.com/@romaindancre?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Romain Dancre</a> on <a href="https://unsplash.com/photos/person-in-orange-long-sleeve-shirt-writing-on-white-paper-doplSDELX7E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a>
+              </div>
             </div>
           </div>
 
@@ -112,10 +116,13 @@ const PropertyOwners: React.FC = () => {
           <div className="order-1 md:order-2">
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/5816297/pexels-photo-5816297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                src="https://minio.goose-neon.ts.net/curator/assets/pexels-mart-production-7415036.jpg"
                 alt="Property Management Services"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
+              <div className="text-gray-500 text-sm mt-2">
+                Photo by <a href="https://www.pexels.com/@mart-production/" target="_blank" rel="noopener noreferrer">MART PRODUCTION</a> on <a href="https://www.pexels.com/photo/frau-haus-innen-fenster-7415036/" target="_blank" rel="noopener noreferrer">Pexels</a>
+              </div>
             </div>
           </div>
         </div>
