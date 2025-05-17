@@ -31,10 +31,10 @@ function App() {
         <main>
           <Hero />
           <PropertyOwners />
-          <About />
           <Services />
           {/* <Gallery /> */}
           <Testimonials />
+          <About />
           <Contact />
         </main>
         <Footer />

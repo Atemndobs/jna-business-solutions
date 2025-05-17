@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-navy-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/70 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} J &A Business Solutions LLC. All rights reserved.
+              © {new Date().getFullYear()} J&A Business Solutions LLC. All rights reserved.
             </p>
             {/* <div className="flex space-x-6">
               <a href="#" className="text-white/70 hover:text-gold-500 transition-colors text-sm">Privacy Policy</a>
