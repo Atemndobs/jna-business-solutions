@@ -9,27 +9,27 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
+    { name: 'For Property Owners', href: '#property-owners' },
+    { name: 'Rental Services', href: '#services' },
     // { name: 'Gallery', href: '#gallery' },
     { name: 'Testimonials', href: '#testimonials' },
+    { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img 
-            src={isScrolled 
+          <img
+            src={isScrolled
               ? "https://minio.goose-neon.ts.net/curator/assets/Profile_Round_grey.png"
               : "https://minio.goose-neon.ts.net/curator/assets/Profile_Round_grey.png"
-            } 
-            alt="J & A Business Solutions LLC" 
+            }
+            alt="J & A Business Solutions LLC"
             className="h-12 w-auto mr-3"
           />
           {/* <span className={`font-medium ${isScrolled ? 'text-navy-800' : 'text-white'}`}>
@@ -40,18 +40,17 @@ const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <Link 
+            <Link
               key={link.name}
               href={link.href}
-              className={`font-medium hover:text-gold-500 transition-colors ${
-                isScrolled ? 'text-navy-800' : 'text-white'
-              }`}
+              className={`font-medium hover:text-gold-500 transition-colors ${isScrolled ? 'text-navy-800' : 'text-white'
+                }`}
             >
               {link.name}
             </Link>
           ))}
-          <a 
-            href="tel:+1234567890" 
+          <a
+            href="tel:+1234567890"
             className="ml-4 flex items-center bg-gold-500 text-white px-4 py-2 rounded hover:bg-gold-600 transition-colors"
           >
             <Phone size={16} className="mr-2" />
@@ -61,6 +60,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation Toggle */}
         <button
+          type="button"
           className="md:hidden text-navy-900 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -83,8 +83,8 @@ const Header: React.FC = () => {
                   {link.name}
                 </Link>
               ))}
-              <a 
-                href="tel:+1234567890" 
+              <a
+                href="tel:+1234567890"
                 className="flex items-center bg-gold-500 text-white px-4 py-2 rounded hover:bg-gold-600 transition-colors w-full justify-center"
               >
                 <Phone size={16} className="mr-2" />
