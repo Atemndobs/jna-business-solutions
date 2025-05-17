@@ -111,11 +111,11 @@ const Footer: React.FC = () => {
             <p className="text-white/70 text-sm mb-4 md:mb-0">
               © {new Date().getFullYear()} J &A Business Solutions LLC. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               <a href="#" className="text-white/70 hover:text-gold-500 transition-colors text-sm">Privacy Policy</a>
               <a href="#" className="text-white/70 hover:text-gold-500 transition-colors text-sm">Terms of Service</a>
               <a href="#" className="text-white/70 hover:text-gold-500 transition-colors text-sm">Sitemap</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
