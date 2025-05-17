@@ -1,10 +1,15 @@
 // src/service-worker.js
-const CACHE_NAME = 'my-site-cache-v1';
+const CACHE_NAME = 'jna-business-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
   '/src/main.tsx',
   '/src/App.tsx',
+  '/src/fav_round_grey.ico/manifest.json',
+  '/src/fav_round_grey.ico/favicon-16x16.png',
+  '/src/fav_round_grey.ico/favicon-32x32.png',
+  '/src/fav_round_grey.ico/favicon-96x96.png',
+  '/src/fav_round_grey.ico/android-icon-192x192.png',
   // Add other static assets here
 ];
 

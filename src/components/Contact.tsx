@@ -110,7 +110,9 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gold-500 mb-1">Email Us</h4>
-                    <p className="text-white/80">info@jnabusinesssolutions.com</p>
+                    <a href="mailto:info@jnabusinesssolutions.com" className="text-white/80 hover:text-gold-500 transition-colors">
+                      info@jnabusinesssolutions.com
+                    </a>
                   </div>
                 </div>
                 

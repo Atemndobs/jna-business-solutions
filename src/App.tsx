@@ -7,16 +7,17 @@ import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PWAInstallPrompt from './components/PWAInstallPrompt';
 import { ScrollProvider } from './ScrollContext';
 
 function App() {
   useEffect(() => {
     // Update page title
     document.title = "J&A Business Solutions LLC | Premium Property Services";
-    
+
     // Add smooth scrolling behavior for anchor links
     document.documentElement.style.scrollBehavior = 'smooth';
-    
+
     return () => {
       document.documentElement.style.scrollBehavior = '';
     };
@@ -35,6 +36,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
+        <PWAInstallPrompt />
       </div>
     </ScrollProvider>
   );
