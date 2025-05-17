@@ -22,28 +22,28 @@ const Contact: React.FC = () => {
     phone: '',
     message: ''
   });
-  
+
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
-    
+
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
     }
-    
+
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Email is invalid';
     }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
     }
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -55,10 +55,10 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (validate()) {
       setIsSubmitting(true);
-      
+
       // Simulate form submission
       setTimeout(() => {
         setIsSubmitting(false);
@@ -77,18 +77,26 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 bg-navy-900 text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="text-sm font-medium text-gold-500 uppercase tracking-wider">Contact Us</span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Book Your Stay</h2>
-          <p className="mt-4 text-white/80 text-lg">
-            Ready to experience modern corperate rentals? Contact us to book your stay or learn more about our properties.
+          <span className="text-sm font-medium text-gold-500 uppercase tracking-wider">Contact</span>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Talk to Us</h2>
+          {/* <p className="mt-4 text-white/80 text-lg">
+            Whether you’re a property owner exploring a strategic partnership or a guest seeking premium corporate housing — we’re here to help.
           </p>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Property Owners</h2>
+          <p className="mt-4 text-white/80 text-lg">
+            Interested in guaranteed rental income and hands-off property management? Let’s discuss how our corporate leasing model protects and elevates your asset.
+          </p>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Corporate Guests</h2>
+          <p className="mt-4 text-white/80 text-lg">
+            Looking for a professional, fully serviced stay? Reach out to learn more about our curated portfolio of modern accommodations.
+          </p> */}
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <div className="bg-navy-800 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-4">
@@ -101,7 +109,7 @@ const Contact: React.FC = () => {
                     <p className="text-white/80">7484 S Camino Cardal<br />Tucson, AZ 85756-0058</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-4">
                     <div className="bg-gold-500/20 p-3 rounded-full">
@@ -115,7 +123,7 @@ const Contact: React.FC = () => {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-4">
                     <div className="bg-gold-500/20 p-3 rounded-full">
@@ -128,7 +136,7 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* <div className="mt-10">
                 <h4 className="font-medium mb-3">Follow Us</h4>
                 <div className="flex space-x-4">
@@ -146,7 +154,7 @@ const Contact: React.FC = () => {
               </div> */}
             </div>
           </div>
-          
+
           {/* <div>
             {isSubmitted ? (
               <div className="bg-green-600/20 text-green-100 p-8 rounded-lg text-center">
