@@ -29,7 +29,7 @@ const Header: React.FC = () => {
               ? "https://minio.goose-neon.ts.net/curator/assets/Profile_Round_grey.png"
               : "https://minio.goose-neon.ts.net/curator/assets/Profile_Round_grey.png"
             }
-            alt="J & A Business Solutions LLC"
+            alt="J&A Business Solutions LLC"
             className="h-12 w-auto mr-3"
           />
           {/* <span className={`font-medium ${isScrolled ? 'text-navy-800' : 'text-white'}`}>

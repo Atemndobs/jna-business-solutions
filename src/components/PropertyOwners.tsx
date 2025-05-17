@@ -47,7 +47,7 @@ const PropertyOwners: React.FC = () => {
     },
     {
       title: "Long-Term Occupancy Stability",
-      description: "Our business model focuses on extended stays, reducing turnover and providing more stable, predictable property usage.",
+      description: "Our preferred model with our partners is based on long-term lease agreements, minimizing vacancy and turnover.",
       icon: <Clock className="w-5 h-5 text-gold-500" />
     },
     {
@@ -64,7 +64,7 @@ const PropertyOwners: React.FC = () => {
           <span className="text-sm font-medium text-gold-500 uppercase tracking-wider">For Property Owners</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 mt-2">Strategic Partnership for Property Owners</h2>
           <p className="mt-4 text-navy-700 text-lg">
-            J & A Business Solutions LLC offers property owners a unique leasing model that maximizes returns while minimizing hassle.
+            J&A Business Solutions LLC offers property owners a unique leasing model that maximizes returns while minimizing hassle.
             Partner with us to transform your property into a premium corporate rental with guaranteed income and professional management.
           </p>
         </div>
@@ -78,7 +78,7 @@ const PropertyOwners: React.FC = () => {
                 alt="Luxury Property Management"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
-              <div className="text-gray-500 text-sm mt-2">
+<div className="text-gray-400 text-xs mt-2">
                 Photo by <a href="https://unsplash.com/@romaindancre?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Romain Dancre</a> on <a href="https://unsplash.com/photos/person-in-orange-long-sleeve-shirt-writing-on-white-paper-doplSDELX7E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a>
               </div>
             </div>
@@ -115,7 +115,7 @@ const PropertyOwners: React.FC = () => {
                 alt="Property Management Services"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
-              <div className="text-gray-500 text-sm mt-2">
+<div className="text-gray-400 text-xs mt-2">
                 Photo by <a href="https://www.pexels.com/@mart-production/" target="_blank" rel="noopener noreferrer">MART PRODUCTION</a> on <a href="https://www.pexels.com/photo/frau-haus-innen-fenster-7415036/" target="_blank" rel="noopener noreferrer">Pexels</a>
               </div>
             </div>

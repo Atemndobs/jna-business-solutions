@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             Corporate Rentals for <span className="text-gold-500">Modern Living</span>
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-2xl">
-            Experience premium corporate accommodations tailored to your lifestyle. J & A Business Solutions LLC provides exceptional rental properties with unmatched comfort and convenience.
+            Experience premium corporate accommodations tailored to your lifestyle. J&A Business Solutions LLC provides exceptional rental properties with unmatched comfort and convenience.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
