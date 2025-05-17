@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, DollarSign, Wrench, Shield, Clock, MessageSquare, Leaf } from 'lucide-react';
+import { Users, DollarSign, Wrench, Shield, Clock, MessageSquare } from 'lucide-react';
 
 interface BenefitProps {
   title: string;
@@ -24,10 +24,10 @@ const BenefitItem: React.FC<BenefitProps> = ({ title, description, icon }) => {
 };
 
 const PropertyOwners: React.FC = () => {
-  const benefits = [
+  const benefits: BenefitProps[] = [
     {
       title: "Corporate Guest Portfolio",
-      description: "Our guests are primarily corporate professionals and business travelers, ensuring respectful and responsible occupancy of your property.",
+      description: "Our tenants are exclusively vetted business professionals, verified through established platforms and subject to background checks who treat the space with care and respect.",
       icon: <Users className="w-5 h-5 text-gold-500" />
     },
     {
@@ -55,11 +55,6 @@ const PropertyOwners: React.FC = () => {
       description: "Experience transparent, responsive communication and meticulous oversight of your property at all times.",
       icon: <MessageSquare className="w-5 h-5 text-gold-500" />
     },
-    {
-      title: "Lower Impact Tenancy",
-      description: "Our corporate guests typically maintain a lighter footprint on your property compared to traditional vacation rentals.",
-      icon: <Leaf className="w-5 h-5 text-gold-500" />
-    }
   ];
 
   return (
@@ -128,11 +123,6 @@ const PropertyOwners: React.FC = () => {
         </div>
 
         <div className="mt-16 max-w-3xl mx-auto">
-          <BenefitItem
-            title={benefits[6].title}
-            description={benefits[6].description}
-            icon={benefits[6].icon}
-          />
         </div>
       </div>
     </section>

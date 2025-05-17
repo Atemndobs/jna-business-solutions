@@ -14,20 +14,20 @@ const Contact: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="mt-4 text-white/80 text-lg">
-              Whether you’re a property owner exploring a strategic partnership or a guest seeking premium corporate housing — we’re here to help.
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Property Owners</h2>
-            <p className="mt-4 text-white/80 text-lg">
+              {/* <p className="mt-4 pb-5 text-white/80 text-lg">
+                Whether you’re a property owner exploring a strategic partnership or a guest seeking premium corporate housing — we’re here to help.
+              </p> */}
+            <h2 className="font-serif font-bold text-white mt-2 text-2xl ">Property Owners</h2>
+            <p className="mt-4 pb-5 text-white/80 text-lg">
               Interested in guaranteed rental income and hands-off property management? Let’s discuss how our corporate leasing model protects and elevates your asset.
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-2">Corporate Guests</h2>
-            <p className="mt-4 text-white/80 text-lg">
+            <h2 className="font-serif font-bold text-white mt-2 text-2xl">Corporate Guests</h2>
+            <p className="mt-4 pb-5 text-white/80 text-lg">
               Looking for a professional, fully serviced stay? Reach out to learn more about our curated portfolio of modern accommodations.
             </p>
           </div>
 
-                    <div>
+          <div>
             <div className="bg-navy-800 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
 
