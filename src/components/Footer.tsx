@@ -91,13 +91,6 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-bold mb-4">Contact Information</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <svg className="w-5 h-5 mr-3 text-gold-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <span className="text-white/70">7484 S Camino Cardal<br />Tucson, AZ 85756-0058</span>
-              </li>
-              <li className="flex items-start">
                 <svg className="w-5 h-5 mr-3 text-gold-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
@@ -110,6 +103,13 @@ const Footer: React.FC = () => {
                 <a href="tel:5208699777" className="hover:text-gold-500 transition-colors">
                   +1 (520) 869-9777
                 </a>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 mr-3 text-gold-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span className="text-white/70">7484 S Camino Cardal<br />Tucson, AZ 85756-0058</span>
               </li>
             </ul>
           </div>

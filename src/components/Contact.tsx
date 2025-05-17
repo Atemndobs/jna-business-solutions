@@ -35,18 +35,6 @@ const Contact: React.FC = () => {
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-4">
                     <div className="bg-gold-500/20 p-3 rounded-full">
-                      <MapPin className="w-5 h-5 text-gold-500" />
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-gold-500 mb-1">Our Location</h4>
-                    <p className="text-white/80">7484 S Camino Cardal<br />Tucson, AZ 85756-0058</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 mr-4">
-                    <div className="bg-gold-500/20 p-3 rounded-full">
                       <Mail className="w-5 h-5 text-gold-500" />
                     </div>
                   </div>
@@ -67,6 +55,18 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-medium text-gold-500 mb-1">Call Us</h4>
                     <p className="text-white/80">+1 (520) 869-9777</p>
+                  </div>
+                </div>
+
+                                <div className="flex items-start">
+                  <div className="flex-shrink-0 mr-4">
+                    <div className="bg-gold-500/20 p-3 rounded-full">
+                      <MapPin className="w-5 h-5 text-gold-500" />
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-gold-500 mb-1">Our Location</h4>
+                    <p className="text-white/80">7484 S Camino Cardal<br />Tucson, AZ 85756-0058</p>
                   </div>
                 </div>
               </div>
