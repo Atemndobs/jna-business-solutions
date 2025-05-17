@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             </div> */}
           </div>
 
-          <div>
+          <div className="md:col-span-1 md:pr-8">
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="md:col-span-1 md:pr-4">
             <h4 className="text-lg font-bold mb-4">Our Services</h4>
             <ul className="space-y-2">
               <li>
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="md:col-span-1 md:pl-8 md:min-w-[280px]">
             <h4 className="text-lg font-bold mb-4">Contact Information</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
@@ -89,10 +89,10 @@ const Footer: React.FC = () => {
                 <span className="text-white/70">7484 S Camino Cardal<br />Tucson, AZ 85756-0058</span>
               </li>
               <li className="flex items-start">
-                <svg className="w-5 h-5 mr-3 text-gold-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 mr-3 text-gold-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <a href="mailto:info@jnabusinesssolutions.com" className="text-white/80 hover:text-gold-500 transition-colors">
+                <a href="mailto:info@jnabusinesssolutions.com" className="text-white/80 hover:text-gold-500 transition-colors break-normal whitespace-nowrap">
                   info@jnabusinesssolutions.com
                 </a>
               </li>
