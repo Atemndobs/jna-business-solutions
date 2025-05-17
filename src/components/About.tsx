@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-sm font-medium text-gold-500 uppercase tracking-wider">About Us</span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 mt-2">The J & A Difference</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900 mt-2">The J&A Difference</h2>
           <p className="mt-4 text-navy-700 text-lg">
             As leaders in the short-term rental market, we've built our reputation on providing 
             exceptional accommodations that combine luxury, comfort, and convenience.

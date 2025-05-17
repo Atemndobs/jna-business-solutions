@@ -1,3 +1,8 @@
+import React, { useState } from 'react';
+import * as LucideIcons from 'lucide-react';
+
+const { MessageCircle, X, Send } = LucideIcons;
+
 // In the handleSubmit function
 setTimeout(() => {
   setChatHistory(prev => [...prev, {
